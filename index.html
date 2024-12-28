@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revelación de Sexo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Video de fondo que ocupa toda la pantalla -->
+    <video id="backgroundVideo" autoplay muted loop>
+        <source src="sigueña.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+
+    <div id="app">
+        <h1>¿Quieres descubrir el sexo del bebé? 
+          <br> Oprime en quiero saber</h1>
+        <button id="startBtn">Quiero saber</button>
+    </div>
+
+    <audio id="drumSound" src="drum.mp3"></audio>
+    <audio id="backgroundMusic" src="musicabb.mp3" loop autoplay></audio>
+    <audio id="finalAudio" src="audio_final.mp3" preload="auto" loop></audio>
+
+    <div id="mediaContainer" style="display: none;">
+        <div class="media">
+            <div class="text-container">
+                <h1>¡Preparando Revelacion de Sexo!</h1> <!-- Texto centrado en la parte superior -->
+            </div>
+            <div class="video-container">
+                <img class="sideGif left-gif" src="baby.gif" alt="Gif izquierdo">
+                <video id="revealVideo" autoplay muted loop>
+                    <source src="ecobb.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+                <img class="sideGif right-gif" src="music-drummer.gif" alt="Gif derecho">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="logica.js"></script>
+</body>
+</html>
