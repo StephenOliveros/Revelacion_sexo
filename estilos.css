@@ -1,144 +1,143 @@
 /* General: Centrar contenido y mantener fondo atractivo */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #f0f8ff, #faebd7);
-    color: #333;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* Video de fondo */
-  #backgroundVideo {
-    position: absolute; /* Coloca el video detrás del contenido */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que el video cubra toda la pantalla */
-    z-index: -1;
-  }
-  
-  /* Contenedor principal */
-  #app {
-    text-align: center;
-    z-index: 1;
-    padding: 0 20px; /* Añadir algo de espacio a los lados */
-  }
-  
-  /* Estilo del primer h1 */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f0f8ff, #faebd7);
+  color: #333;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Video de fondo */
+#backgroundVideo {
+  position: absolute; /* Coloca el video detrás del contenido */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+  z-index: -1;
+}
+
+/* Contenedor principal */
+#app {
+  text-align: center;
+  z-index: 1;
+  padding: 0 20px; /* Añadir algo de espacio a los lados */
+}
+
+/* Estilo del primer h1 */
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem; /* Tamaño base */
+  margin: 20px 0;
+}
+
+/* Estilo del botón */
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Nueva clase para el contenedor del texto */
+.text-container {
+  position: absolute;
+  top: 20px; /* Centrado hacia la parte superior */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: #fff;
+  font-size: 2rem; /* Tamaño de fuente */
+  font-weight: bold;
+}
+
+/* Contenedor que rodea los GIFs y el video */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; /* Espaciado desde el texto */
+}
+
+/* Estilo para los GIFs */
+.sideGif {
+  width: 15%;
+  max-width: 150px;
+  margin: 0 20px; /* Espaciado entre los GIFs y el video */
+}
+
+/* Video de la revelación */
+#revealVideo {
+  width: 50%;
+  max-width: 800px;
+  max-height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
   h1 {
-    color: white;
-    font-weight: bold;
-    font-size: 2.5rem; /* Tamaño base */
-    margin: 20px 0;
+    font-size: 1.8rem; /* Reducir el tamaño del texto */
   }
-  
-  /* Estilo del botón */
+
   button {
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 12px 25px;
+    font-size: 16px;
   }
-  
-  button:hover {
-    background-color: #0056b3;
+
+  .sideGif {
+    width: 40%; /* Aseguramos que los GIFs se ajusten mejor en pantallas pequeñas */
   }
-  
-  /* Nueva clase para el contenedor del texto */
-  .text-container {
-    position: absolute;
-    top: 20px; /* Centrado hacia la parte superior */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    color: #fff;
-    font-size: 2rem; /* Tamaño de fuente */
-    font-weight: bold;
+
+  #revealVideo {
+    width: 80%; /* Asegurar que el video ocupe el 80% del ancho */
   }
-  
-  /* Contenedor que rodea los GIFs y el video */
-  .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px; /* Espaciado desde el texto */
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem; /* Tamaño de texto ligeramente menor */
   }
-  
-  /* Estilo para los GIFs */
+
+  .sideGif {
+    width: 20%; /* Ajustar el tamaño de los GIFs */
+  }
+
+  #revealVideo {
+    width: 70%;
+  }
+}
+
+/* Para pantallas grandes (escritorios grandes) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3rem; /* Aumentar el tamaño de texto */
+  }
+
   .sideGif {
     width: 15%;
-    max-width: 150px;
-    margin: 0 20px; /* Espaciado entre los GIFs y el video */
   }
-  
-  /* Video de la revelación */
+
   #revealVideo {
     width: 50%;
-    max-width: 800px;
-    max-height: 450px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-  
-  /* Media Queries para Responsividad */
-  
-  /* Para pantallas pequeñas (móviles) */
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 1.8rem; /* Reducir el tamaño del texto */
-    }
-  
-    button {
-      padding: 12px 25px;
-      font-size: 16px;
-    }
-  
-    .sideGif {
-      width: 40%; /* Aseguramos que los GIFs se ajusten mejor en pantallas pequeñas */
-    }
-  
-    #revealVideo {
-      width: 80%; /* Asegurar que el video ocupe el 80% del ancho */
-    }
-  }
-  
-  /* Para pantallas medianas (tabletas) */
-  @media (max-width: 1024px) {
-    h1 {
-      font-size: 2rem; /* Tamaño de texto ligeramente menor */
-    }
-  
-    .sideGif {
-      width: 20%; /* Ajustar el tamaño de los GIFs */
-    }
-  
-    #revealVideo {
-      width: 70%;
-    }
-  }
-  
-  /* Para pantallas grandes (escritorios grandes) */
-  @media (min-width: 1200px) {
-    h1 {
-      font-size: 3rem; /* Aumentar el tamaño de texto */
-    }
-  
-    .sideGif {
-      width: 15%;
-    }
-  
-    #revealVideo {
-      width: 50%;
-    }
-  }
-  
+}
