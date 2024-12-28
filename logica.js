@@ -5,12 +5,12 @@ const backgroundMusic = document.getElementById('backgroundMusic');
 const appDiv = document.getElementById('app');
 const mediaContainer = document.getElementById('mediaContainer');
 
-// Asegurar que la música de fondo se reproduzca automáticamente
-document.addEventListener('DOMContentLoaded', () => {
+// Función para asegurar que la música de fondo se reproduzca
+function playBackgroundMusic() {
     backgroundMusic.play().catch(() => {
         console.log("Reproducción automática bloqueada por el navegador.");
     });
-});
+}
 
 // Evento para iniciar la revelación
 startBtn.addEventListener('click', () => {
@@ -18,6 +18,15 @@ startBtn.addEventListener('click', () => {
     drumSound.play(); // Reproducir sonido de tambores
     startBtn.style.display = 'none'; // Ocultar botón
     startRevealAnimation();
+});
+
+// Evento global para interactuar con la página y reproducir música
+document.addEventListener('click', (event) => {
+    // Asegúrate de que el clic no se haya realizado sobre el botón de inicio
+    if (event.target !== startBtn) {
+        playBackgroundMusic(); // Reproducir música de fondo
+        document.removeEventListener('click', playBackgroundMusic); // Eliminar el evento una vez que se haya tocado
+    }
 });
 
 // Función para iniciar la animación y mostrar la revelación
@@ -63,23 +72,23 @@ function showGenderReveal() {
 
 // Función para lanzar confeti con colores rosados
 function launchConfetti() {
-  // Configurar múltiples explosiones para mayor densidad
-  const end = Date.now() + 1000; // Duración total de 1 segundo
+    // Configurar múltiples explosiones para mayor densidad
+    const end = Date.now() + 1000; // Duración total de 1 segundo
 
-  // Función para lanzar confeti en intervalos
-  const frame = () => {
-      confetti({
-          particleCount: 500, // Más partículas para mayor densidad
-          startVelocity: 45, // Velocidad inicial
-          spread: 60, // Menor dispersión para más densidad
-          origin: { x: Math.random(), y: 0.6 }, // Coordenadas de origen aleatorias
-          colors: ['#FF69B4', '#FFB6C1'], // Tonos de rosado
-      });
+    // Función para lanzar confeti en intervalos
+    const frame = () => {
+        confetti({
+            particleCount: 500, // Más partículas para mayor densidad
+            startVelocity: 45, // Velocidad inicial
+            spread: 60, // Menor dispersión para más densidad
+            origin: { x: Math.random(), y: 0.6 }, // Coordenadas de origen aleatorias
+            colors: ['#FF69B4', '#FFB6C1'], // Tonos de rosado
+        });
 
-      if (Date.now() < end) {
-          requestAnimationFrame(frame);
-      }
-  };
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    };
 
-  frame();
+    frame();
 }
