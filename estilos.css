@@ -102,10 +102,11 @@ button:hover {
   body {
     flex-direction: column; /* Cambiar disposición */
     height: auto; /* Ajustar altura dinámica */
+    padding: 15px;
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 5vw;
   }
 
   button {
@@ -120,6 +121,8 @@ button:hover {
 
   #revealVideo {
     width: 90%;
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -131,6 +134,7 @@ button:hover {
 
   .sideGif {
     width: 25%;
+    height: auto;
   }
 
   #revealVideo {
