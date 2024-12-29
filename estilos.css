@@ -72,7 +72,6 @@ button:hover {
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 30px;
   text-align: center; /* Ajustar texto al centro */
 }
 
@@ -125,7 +124,7 @@ button:hover {
 
   .sideGif {
     width: 30%;
-    margin: 25px;
+    margin: 5px;
   }
 
   #revealVideo {
@@ -137,6 +136,7 @@ button:hover {
   /* Ajuste para el contenedor de GIFs */
   .video-container {
     flex-direction: column; /* Apilar elementos verticalmente */
+    margin-top: 20px;
     gap: 10px; /* Reducir espacio entre elementos */
   }
 
@@ -189,4 +189,17 @@ button:hover {
   margin-top: 50px;
   color: white;
   z-index: 2;
+}
+/* Mejora: espacio entre el texto y el primer gif */
+.text-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px; /* Añadir espacio entre el texto y el gif */
 }
