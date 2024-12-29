@@ -14,12 +14,12 @@ body {
 
 /* Video de fondo */
 #backgroundVideo {
-  position: absolute; /* Coloca el video detrás del contenido */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -27,15 +27,17 @@ body {
 #app {
   text-align: center;
   z-index: 1;
-  padding: 0 20px; /* Añadir algo de espacio a los lados */
+  padding: 0 20px;
+  max-width: 90%; /* Limitar ancho del contenido */
 }
 
 /* Estilo del primer h1 */
 h1 {
   color: white;
   font-weight: bold;
-  font-size: 2.5rem; /* Tamaño base */
+  font-size: 2.5rem;
   margin: 20px 0;
+  word-wrap: break-word; /* Ajustar texto para evitar desbordamiento */
 }
 
 /* Estilo del botón */
@@ -48,6 +50,7 @@ button {
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  max-width: 80%; /* Limitar ancho del botón en móviles */
 }
 
 button:hover {
@@ -57,13 +60,14 @@ button:hover {
 /* Nueva clase para el contenedor del texto */
 .text-container {
   position: absolute;
-  top: 20px; /* Centrado hacia la parte superior */
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   color: #fff;
-  font-size: 2rem; /* Tamaño de fuente */
+  font-size: 2rem;
   font-weight: bold;
+  text-align: center; /* Ajustar texto al centro */
 }
 
 /* Contenedor que rodea los GIFs y el video */
@@ -71,19 +75,20 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px; /* Espaciado desde el texto */
+  margin-top: 100px;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
 }
 
 /* Estilo para los GIFs */
 .sideGif {
-  width: 15%;
+  width: 20%;
   max-width: 150px;
-  margin: 0 20px; /* Espaciado entre los GIFs y el video */
+  margin: 10px; /* Ajustar espaciado en móviles */
 }
 
 /* Video de la revelación */
 #revealVideo {
-  width: 50%;
+  width: 70%;
   max-width: 800px;
   max-height: 450px;
   border-radius: 10px;
@@ -94,43 +99,49 @@ button:hover {
 
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 600px) {
+  body {
+    flex-direction: column; /* Cambiar disposición */
+    height: auto; /* Ajustar altura dinámica */
+  }
+
   h1 {
-    font-size: 1.8rem; /* Reducir el tamaño del texto */
+    font-size: 1.8rem;
   }
 
   button {
-    padding: 12px 25px;
+    padding: 12px 20px;
     font-size: 16px;
   }
 
   .sideGif {
-    width: 40%; /* Aseguramos que los GIFs se ajusten mejor en pantallas pequeñas */
+    width: 30%;
+    margin: 5px;
   }
 
   #revealVideo {
-    width: 80%; /* Asegurar que el video ocupe el 80% del ancho */
+    width: 90%;
   }
 }
 
 /* Para pantallas medianas (tabletas) */
 @media (max-width: 1024px) {
   h1 {
-    font-size: 2rem; /* Tamaño de texto ligeramente menor */
+    font-size: 2rem;
   }
 
   .sideGif {
-    width: 20%; /* Ajustar el tamaño de los GIFs */
+    width: 25%;
   }
 
   #revealVideo {
-    width: 70%;
+    width: 75%;
   }
 }
 
 /* Para pantallas grandes (escritorios grandes) */
 @media (min-width: 1200px) {
   h1 {
-    font-size: 3rem; /* Aumentar el tamaño de texto */
+    font-size: 3rem;
   }
 
   .sideGif {

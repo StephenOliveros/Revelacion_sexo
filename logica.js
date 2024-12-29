@@ -78,8 +78,8 @@ function launchConfetti() {
     // Función para lanzar confeti en intervalos
     const frame = () => {
         confetti({
-            particleCount: 500, // Más partículas para mayor densidad
-            startVelocity: 45, // Velocidad inicial
+            particleCount: 350, // Más partículas para mayor densidad
+            startVelocity: 50, // Velocidad inicial
             spread: 60, // Menor dispersión para más densidad
             origin: { x: Math.random(), y: 0.6 }, // Coordenadas de origen aleatorias
             colors: ['#FF69B4', '#FFB6C1'], // Tonos de rosado
