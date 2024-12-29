@@ -81,9 +81,8 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  margin: 20px;
   flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-  gap: 15px; /* Espaciado entre elementos */
+  gap: 30px; /* Espaciado entre elementos */
 }
 
 /* Estilo para los GIFs */
