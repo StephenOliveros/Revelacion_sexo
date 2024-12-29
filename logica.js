@@ -35,7 +35,7 @@ function startRevealAnimation() {
         <div class="loading-drum">
             <div class="drum-animation"></div>
         </div>
-        <div class="reveal-text" id="revealText">Preparando revelación...</div> <!-- Texto de preparación -->`;
+        `;
 
     // Mostrar el contenedor de video e imagen
     mediaContainer.style.display = 'flex';
