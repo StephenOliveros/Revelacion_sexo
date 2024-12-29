@@ -54,6 +54,7 @@ function showGenderReveal() {
 
     appDiv.innerHTML = `
         <h1>¡Es una ${gender}!</h1>
+        <button id="restartBtn" style="padding: 15px 30px; font-size: 18px; border: none; border-radius: 5px; background-color: #007BFF; color: white; cursor: pointer; transition: background-color 0.3s ease;">Volver a intentar</button>
     `;
 
     // Cambiar el fondo
