@@ -137,7 +137,7 @@ button:hover {
   .video-container {
     flex-direction: column; /* Apilar elementos verticalmente */
     margin-top: 20px;
-    gap: 10px; /* Reducir espacio entre elementos */
+    /*gap: 10px; /* Reducir espacio entre elementos */
   }
 
   /* Asegurar que el contenedor de fondo también se vea bien en móviles */
