@@ -44,7 +44,7 @@ function startRevealAnimation() {
     setTimeout(() => {
         mediaContainer.style.display = 'none'; // Ocultar el contenedor
         showGenderReveal();
-    }, 5500); // Esperar 5.5 segundos
+    }, 9700); // Esperar 9.7 segundos
 }
 
 // Función para mostrar el sexo del bebé
