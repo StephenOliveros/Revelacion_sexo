@@ -132,21 +132,18 @@ button:hover {
     display: block;
     margin: 0 auto;
   }
+  /* Ajustar espaciado entre text-container y video-container */
+  
+  .text-container {
+    position: relative; /* Cambia a relativo para respetar el flujo del documento */
+    padding-bottom: 20px; /* Espaciado entre texto y video */
+}
 
   /* Ajuste para el contenedor de GIFs */
   .video-container {
     flex-direction: column; /* Apilar elementos verticalmente */
     margin-top: 20px;
     gap: 10px; /* Reducir espacio entre elementos */
-  }
-
-  /* Ajustar espaciado entre text-container y video-container */
-  .text-container {
-    margin-bottom: 20px; /* Añadir espacio debajo del texto */
-  }
-
-  .video-container {
-    margin-top: 20px; /* Espacio adicional si es necesario */
   }
 
   /* Asegurar que el contenedor de fondo también se vea bien en móviles */
