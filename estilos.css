@@ -89,7 +89,7 @@ button:hover {
 .sideGif {
   width: 20%;
   max-width: 150px;
-  margin: 60px; /* Ajustar espaciado en móviles */
+  margin: 10px; /* Ajustar espaciado en móviles */
   object-fit: contain; /* Mejor ajuste del contenido */
   border-radius: 5px; /* Opcional: suaviza bordes */
 }
@@ -132,12 +132,6 @@ button:hover {
     display: block;
     margin: 0 auto;
   }
-  /* Ajustar espaciado entre text-container y video-container */
-  
-  .text-container {
-    position: relative; /* Cambia a relativo para respetar el flujo del documento */
-    padding-bottom: 20px; /* Espaciado entre texto y video */
-}
 
   /* Ajuste para el contenedor de GIFs */
   .video-container {
