@@ -110,6 +110,7 @@ button:hover {
   .text-container {
     position: static; /* Quita la posición absoluta */
     margin-top: 20px; /* Añade espacio superior */
+    margin-bottom: 20px; /* Añade espacio inferior */
     font-size: 1.5rem; /* Ajusta el tamaño de fuente */
     text-align: center; /* Centra el texto */
   }
