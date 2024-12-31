@@ -118,7 +118,7 @@ button:hover {
   .video-container {
     flex-direction: column; /* Acomoda elementos verticalmente */
     gap: 10px; /* Reduce el espacio entre GIFs y video */
-    margin-top: 15px; /* Añade margen superior */
+    margin-top: 30px; /* Añade margen superior */
   }
 
   .sideGif {
