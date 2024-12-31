@@ -40,7 +40,7 @@ h1 {
   font-weight: bold;
   font-size: 2.5rem;
   /*margin: 5px 0;*/
-  margin-top: 10px; /* Margen superior */
+  margin-top: 2px; /* Margen superior */
   margin-bottom: 20px; /* Margen inferior */
   word-wrap: break-word; /* Ajustar texto para evitar desbordamiento */
   z-index: 2; /* Asegura que esté sobre otros elementos */
@@ -111,7 +111,7 @@ button:hover {
 @media (max-width: 600px) {
   .text-container {
     position: static; /* Quita la posición absoluta */
-    margin-top: 8px; /* Añade espacio superior */
+    margin-top: 2px; /* Añade espacio superior */
     margin-bottom: 20px; /* Añade espacio inferior */
     font-size: 1.5rem; /* Ajusta el tamaño de fuente */
     text-align: center; /* Centra el texto */
@@ -126,7 +126,7 @@ button:hover {
   .sideGif {
     width: 50%; /* Ajusta el ancho de los GIFs */
     max-width: 120px; /* Limita el tamaño en móviles */
-    margin: 5px auto; /* Centra los GIFs y ajusta el margen */
+    margin: 10px auto; /* Centra los GIFs y ajusta el margen */
   }
 
   #revealVideo {
