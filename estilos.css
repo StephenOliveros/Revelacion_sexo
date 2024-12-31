@@ -133,6 +133,11 @@ button:hover {
     margin: 0 auto;
   }
 
+  .text-container {
+    position: relative; /* Mantiene el flujo normal del documento */
+    margin-bottom: 20px; /* Añade espacio debajo */
+}
+
   /* Ajuste para el contenedor de GIFs */
   .video-container {
     flex-direction: column; /* Apilar elementos verticalmente */
