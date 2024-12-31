@@ -56,8 +56,14 @@ function showGenderReveal() {
     const color = '#00BFFF'; // Color azul para niño
 
 
-    appDiv.innerHTML = `
+    /*appDiv.innerHTML = `
         <h1>¡Es una ${gender}!</h1>
+        
+        
+    `;*/
+    appDiv.innerHTML = `
+        <h1>¡Es un ${gender}!</h1>
+        
         
     `;
 
