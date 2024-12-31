@@ -140,6 +140,15 @@ button:hover {
     gap: 10px; /* Reducir espacio entre elementos */
   }
 
+  /* Ajustar espaciado entre text-container y video-container */
+  .text-container {
+    margin-bottom: 20px; /* Añadir espacio debajo del texto */
+  }
+
+  .video-container {
+    margin-top: 20px; /* Espacio adicional si es necesario */
+  }
+
   /* Asegurar que el contenedor de fondo también se vea bien en móviles */
   #backgroundVideo {
     position: fixed;  /* Fijar el video de fondo */
