@@ -49,23 +49,23 @@ function startRevealAnimation() {
 
 // Función para mostrar el sexo del bebé
 function showGenderReveal() {
-   /* const gender = 'niña'; // Fijar el género como niña
-    const color = '#FF69B4'; // Color rosado para niña*/
+    const gender = 'niña'; // Fijar el género como niña
+    const color = '#FF69B4'; // Color rosado para niña
 
-    const gender = 'niño'; // Fijar el género como niño
+    /*const gender = 'niño'; // Fijar el género como niño
     const color = '#00BFFF'; // Color azul para niño
+*/
 
-
-    /*appDiv.innerHTML = `
+    appDiv.innerHTML = `
         <h1>¡Es una ${gender}!</h1>
         
         
-    `;*/
-    appDiv.innerHTML = `
+    `;
+   /* appDiv.innerHTML = `
         <h1>¡Es un ${gender}!</h1>
         
         
-    `;
+    `;*/
 
     // Cambiar el fondo
     document.body.style.backgroundColor = color;
@@ -93,8 +93,8 @@ function launchConfetti() {
             startVelocity: 50, // Velocidad inicial
             spread: 60, // Menor dispersión para más densidad
             origin: { x: Math.random(), y: 0.6 }, // Coordenadas de origen aleatorias
-            //colors: ['#FF69B4', '#FFB6C1'], // Tonos de rosado
-            colors: ['#00BFFF', '#ADD8E6'], // Tonos de azul
+            colors: ['#FF69B4', '#FFB6C1'], // Tonos de rosado
+            //colors: ['#00BFFF', '#ADD8E6'], // Tonos de azul
         });
 
         if (Date.now() < end) {
